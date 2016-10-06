@@ -23,3 +23,23 @@ print (type(elems[0]))
 print (elems[0].getText())
 print (str(elems[0]))
 print (elems[0].attrs)
+
+
+pElemes = exampleSoup.select('p')
+print ('\npelems 0 ------')
+print (len(pElemes))
+print (str(pElemes[0]))
+print (pElemes[0].getText())
+print ('\npelems 1------')
+#~ print (str(pElemes[1]))
+print (pElemes[1].getText())
+print ('\npelems 2------')
+#~ print (str(pElemes[2]))
+print (pElemes[2].getText())
+
+spanElem = exampleSoup.select('span')[0]
+print (str(spanElem))
+print (spanElem.get('id'))
+print (spanElem.get('coco')==None)
+print (spanElem.attrs)
+

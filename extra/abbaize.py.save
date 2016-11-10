@@ -1,0 +1,4 @@
+def abbaize(a,b):
+	print (a+b+b+ a)
+
+
